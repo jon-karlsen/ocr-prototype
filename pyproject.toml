@@ -6,17 +6,27 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "easyocr>=1.7.2",
+    "joblib>=1.5.1",
     "matplotlib>=3.10.3",
     "numpy>=2.3.1",
     "opencv-python>=4.11.0.86",
     "pandas>=2.3.0",
     "pillow>=11.2.1",
+    "pip>=25.1.1",
     "pytesseract>=0.3.13",
     "scikit-learn>=1.7.0",
+    "spacy>=3.8.7",
     "streamlit>=1.46.0",
 ]
 
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "flake8>=7.3.0",
+    "pytest>=8.4.1",
+]
 
